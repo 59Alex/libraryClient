@@ -61,6 +61,10 @@ public class LoginController {
             } else {
                 Set<Role> roles = UserCurrent.getUserCurrent().getUser().getRoles();
                 if(roles != null) {
+                    if(!UserCurrent.getUserCurrent().getUser().getEnabled()) {
+                        AlertWindow.alertWindow.alertWindow("Ваш аккаунт заблокирован!");
+                        return;
+                    }
                     if(roles.contains(Role.createBuilder().setName(RoleEnum.ADMIN).build())) {
                         NewWindow.openWindow("/adminPanel.fxml");
                     } else if(roles.contains(Role.createBuilder().setName(RoleEnum.USER).build())) {
