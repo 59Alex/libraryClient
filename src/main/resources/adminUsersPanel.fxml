@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" prefHeight="569.0" prefWidth="1177.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.library.controller.AdminUsersPanelController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="578.0" prefWidth="1177.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TableView fx:id="usersTable" layoutX="283.0" prefHeight="421.0" prefWidth="894.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="37.0" text="ID" />
+                <TableColumn fx:id="firstName" prefWidth="100.0" text="Имя" />
+                  <TableColumn fx:id="lastName" prefWidth="93.0" text="Фамилия" />
+                  <TableColumn fx:id="username" minWidth="6.0" prefWidth="114.0" text="Username" />
+                  <TableColumn fx:id="password" prefWidth="127.0" text="Пароль" />
+                  <TableColumn fx:id="email" prefWidth="131.0" text="email" />
+                  <TableColumn fx:id="enabled" minWidth="108.0" prefWidth="126.0" text="enabled" />
+                  <TableColumn fx:id="role" minWidth="133.0" prefWidth="162.0" text="Роль" />
+              </columns>
+            </TableView>
+            <Button fx:id="backBtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="назад" />
+            <Text layoutX="14.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Поиск по имени:" wrappingWidth="104.13671875" />
+            <TextField fx:id="findByNameF" layoutX="14.0" layoutY="75.0" />
+            <Button fx:id="findByNameBtn" layoutX="14.0" layoutY="112.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="найти" />
+            <Text layoutX="14.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Поиск по id" wrappingWidth="82.00000178813934" />
+            <TextField fx:id="findByIdF" layoutX="14.0" layoutY="175.0" />
+            <Button fx:id="findByIdBtn" layoutX="14.0" layoutY="212.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="найти" />
+            <TextField fx:id="updateFirstNameF" layoutX="14.0" layoutY="284.0" />
+            <TextField fx:id="updateLastNameF" layoutX="14.0" layoutY="326.0" />
+            <TextField fx:id="updateEmailF" layoutX="14.0" layoutY="368.0" />
+            <Text layoutX="14.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Изменить:" wrappingWidth="82.00000178813934" />
+            <Text layoutX="14.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя:" wrappingWidth="82.00000178813934" />
+            <Text layoutX="14.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фамилия" wrappingWidth="82.00000178813934" />
+            <Text layoutX="14.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="email:" wrappingWidth="82.00000178813934" />
+            <Button fx:id="updateBtn" layoutX="14.0" layoutY="448.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="изменить" />
+            <Button fx:id="saveBtn" layoutX="1081.0" layoutY="464.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="добавить" />
+            <Button fx:id="deleteBtn" layoutX="123.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="удалить" />
+            <TextField fx:id="updatePasswordF" layoutX="14.0" layoutY="410.0" />
+            <Text layoutX="14.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="пароль:" wrappingWidth="82.00000178813934" />
+            <ComboBox fx:id="updateRoleC" layoutX="176.0" layoutY="284.0" prefHeight="25.0" prefWidth="96.0" promptText="Роль" />
+            <ComboBox fx:id="updateEnabledC" layoutX="176.0" layoutY="326.0" prefHeight="25.0" prefWidth="96.0" promptText="Enabled" />
+            <Text layoutX="283.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сохранить:" wrappingWidth="82.00000178813934" />
+            <TextField fx:id="saveFirstNameF" layoutX="283.0" layoutY="469.0" />
+            <Text layoutX="283.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя:" wrappingWidth="82.00000178813934" />
+            <TextField fx:id="saveLastNameF" layoutX="445.0" layoutY="468.0" />
+            <Text layoutX="445.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фамилия" wrappingWidth="82.00000178813934" />
+            <TextField fx:id="saveEmailF" layoutX="602.0" layoutY="467.0" />
+            <Text layoutX="602.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="email:" wrappingWidth="82.00000178813934" />
+            <TextField fx:id="savePasswordF" layoutX="759.0" layoutY="466.0" />
+            <Text layoutX="759.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="пароль:" wrappingWidth="82.00000178813934" />
+            <ComboBox fx:id="saveRoleC" layoutX="860.0" layoutY="499.0" prefHeight="25.0" prefWidth="96.0" promptText="Роль" />
+            <ComboBox fx:id="saveEnabledC" layoutX="969.0" layoutY="499.0" prefHeight="25.0" prefWidth="96.0" promptText="Enabled" />
+            <TextField fx:id="saveUsernameF" layoutX="916.0" layoutY="465.0" />
+            <Text layoutX="916.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username:" wrappingWidth="82.00000178813934" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

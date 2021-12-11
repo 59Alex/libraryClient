@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.library.controller.UserPanelController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <Button fx:id="newspaperListBtn" layoutX="250.0" layoutY="56.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #6666ff;" text="Список газет" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="myContentBtn" layoutX="250.0" layoutY="184.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #6666ff;" text="Мой контент" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitBtn" layoutX="14.0" layoutY="342.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: #ff0000;" text="Выйти" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="infoArea" layoutX="14.0" layoutY="53.0" prefHeight="200.0" prefWidth="200.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextArea>
+            <Text layoutX="14.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Профиль" wrappingWidth="121.880859375">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Button fx:id="profileBtn" layoutX="250.0" layoutY="225.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #6666ff;" text="Редактировать профиль" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="journalListBtn" layoutX="250.0" layoutY="99.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #6666ff;" text="Список журналов" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="bookListBtn" layoutX="250.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #6666ff;" text="Список книг" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Button>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
